@@ -4,7 +4,5 @@
 
 
 ```
-
-    https://domain/qiaofeng/api/currentTimeMillis
-
+https://domain/qiaofeng/api/currentTimeMillis
 ```
