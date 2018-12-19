@@ -1,4 +1,4 @@
-package com.chanchfieng.qiaofeng.model;
+package com.chanchifeng.qiaofeng.model;
 
 /**
  * @author:porschan

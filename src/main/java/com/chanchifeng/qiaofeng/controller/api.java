@@ -1,6 +1,6 @@
-package com.chanchfieng.qiaofeng.controller;
+package com.chanchifeng.qiaofeng.controller;
 
-import com.chanchfieng.qiaofeng.model.User;
+import com.chanchifeng.qiaofeng.model.User;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

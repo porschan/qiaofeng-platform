@@ -1,4 +1,4 @@
-package com.chanchfieng.qiaofeng;
+package com.chanchifeng.qiaofeng;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
