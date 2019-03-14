@@ -1,6 +1,5 @@
 package com.chanchifeng.qiaofeng.service.impl;
 
-import com.chanchifeng.qiaofeng.kit.HttpRequestUtil;
 import com.chanchifeng.qiaofeng.service.PageService;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
@@ -10,6 +9,7 @@ import org.springframework.util.MultiValueMap;
 import java.io.IOException;
 
 import static com.chanchifeng.qiaofeng.common.CheckList.API_ICIBA;
+import static com.chanchifeng.qiaofeng.kit.HttpRequestUtil.httpRestClient;
 
 /**
  * @author:porschan
@@ -22,7 +22,6 @@ public class PageServiceImpl implements PageService {
 
     @Override
     public String gainICIBA() {
-        HttpRequestUtil httpRequestUtil = new HttpRequestUtil();
 
         //api url地址
         String url = API_ICIBA;
@@ -33,7 +32,7 @@ public class PageServiceImpl implements PageService {
         //发送http请求并返回结果
         String result = null;
         try {
-            result = httpRequestUtil.HttpRestClient(url,method,params);
+            result = httpRestClient(url,method,params);
         } catch (IOException e) {
             e.printStackTrace();
         }

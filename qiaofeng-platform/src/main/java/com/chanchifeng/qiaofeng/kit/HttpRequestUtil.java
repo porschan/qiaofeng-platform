@@ -16,11 +16,18 @@ import java.io.IOException;
 
 public class HttpRequestUtil {
 
-    //发送http请求
-    public static String HttpRestClient(String url, HttpMethod method, MultiValueMap<String, String> params) throws IOException {
+    /**
+     * 发送http请求
+     * @param url
+     * @param method
+     * @param params
+     * @return
+     * @throws IOException
+     */
+    public static String httpRestClient(String url, HttpMethod method, MultiValueMap<String, String> params) throws IOException {
         SimpleClientHttpRequestFactory requestFactory = new SimpleClientHttpRequestFactory();
-        requestFactory.setConnectTimeout(10*1000);
-        requestFactory.setReadTimeout(10*1000);
+        requestFactory.setConnectTimeout(10 * 1000);
+        requestFactory.setReadTimeout(10 * 1000);
         RestTemplate client = new RestTemplate(requestFactory);
         HttpHeaders headers = new HttpHeaders();
         //  请勿轻易改变此提交方式，大部分的情况下，提交方式都是表单提交

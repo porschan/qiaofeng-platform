@@ -1,7 +1,6 @@
 package com.chanchifeng.qiaofeng.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.chanchifeng.qiaofeng.model.Iciba;
 import com.chanchifeng.qiaofeng.service.PageService;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
