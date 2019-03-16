@@ -35,6 +35,7 @@ public class XinController {
         JSONObject result = new JSONObject();
         result.put("state", true);
         result.put("data",save);
+        System.out.println(result.toJSONString());
         return result.toJSONString();
     }
 
